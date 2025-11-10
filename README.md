@@ -66,6 +66,7 @@ docker-compose exec php bash
 
 ## 6. マイグレーションの実行
 データベースにテーブルを作成します。
+
 このコマンドも **php コンテナ内**で実行してください。
 ```bash
 php artisan migrate
@@ -73,6 +74,7 @@ php artisan migrate
 
 ## 7. シーディングの実行
 初期データを投入します。
+
 このコマンドも **php コンテナ内**で実行してください。
 ```bash
 php artisan db:seed
@@ -80,6 +82,7 @@ php artisan db:seed
 
 ## 8. ストレージのシンボリックリンク作成
 画像やファイルを storage/app/public から公開できるようにリンクを作成します。
+
 このコマンドも **php コンテナ内**で実行してください。
 ```bash
 php artisan storage:link
